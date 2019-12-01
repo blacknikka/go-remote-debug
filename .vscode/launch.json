@@ -8,14 +8,10 @@
             "name": "Remote",
             "type": "go",
             "request": "launch",
-            "mode": "remote",
-            "remotePath": "/go/",
-            "port": 2345,
-            "host": "localhost",
-            "program": "${workspaceRoot}/src/",
+            "mode": "auto",
+            "program": "${workspaceFolder}/src",
             "env": {},
-            "args": [],
-            "showLog": true
+            "args": []
         }
     ]
 }
