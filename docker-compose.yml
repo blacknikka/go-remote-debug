@@ -10,4 +10,4 @@ app:
     - apparmor:unconfined
   cap_add:
     - SYS_PTRACE
-#   command: dlv debug --headless --listen=:2345 --log
+  command: dlv debug ./app --headless --listen=:2345 --log --api-version=2

@@ -7,8 +7,6 @@ RUN go get -u github.com/go-redis/redis && \
 
 ENV PATH $PATH:/go/bin
 
-RUN which dlv
-
 # CMD ["which", "dlv"]
-# CMD ["go", "run", "./app/main.go"]
-CMD ["dlv","debug", "./app", "--listen=:2345", "--headless=true", "--api-version=2"]]
+CMD ["go", "run", "./app/main.go"]
+# CMD ["dlv","debug", "./app", "--listen=:2345", "--headless=true", "--api-version=2"]]
