@@ -9,6 +9,6 @@ ENV PATH $PATH:/go/bin
 
 RUN which dlv
 
-CMD ["which", "dlv"]
-# CMD ["go", "run", "main.go"]
-# CMD ["dlv","debug", "--listen=:2345", "--headless=true", "--api-version=2"]]
+# CMD ["which", "dlv"]
+# CMD ["go", "run", "./app/main.go"]
+CMD ["dlv","debug", "./app", "--listen=:2345", "--headless=true", "--api-version=2"]]

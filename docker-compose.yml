@@ -4,11 +4,10 @@ app:
     - '5000:5000'
     - '2345:2345'
   volumes:
-    - './src:/go/'
+    - './src:/go/app'
   privileged: true
   security_opt:
     - apparmor:unconfined
   cap_add:
     - SYS_PTRACE
 #   command: dlv debug --headless --listen=:2345 --log
-  command: which dlv
